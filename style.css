@@ -1,0 +1,84 @@
+:root {
+  --surface: #ffffff;
+  --text: #10233d;
+  --muted: #334e6f;
+  --accent: #005ea5;
+  --accent-hover: #003d6b;
+  --line: #d7e2ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #eef3f8 0%, #f8fafc 100%);
+  line-height: 1.6;
+}
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+}
+
+.text-navy {
+  color: var(--text);
+}
+
+.navbar .nav-link {
+  color: var(--accent);
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: var(--accent-hover);
+}
+
+p {
+  color: var(--muted);
+}
+
+a:focus-visible {
+  outline: 3px solid #ffb100;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.content-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+}
+
+img {
+  border: 1px solid var(--line);
+}
+
+.resource-card {
+  background: #f8fbff;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.site-footer {
+  background: var(--surface);
+  border-top: 2px solid var(--line);
+}
+
+@media (max-width: 768px) {
+  .content-panel {
+    border-radius: 0.75rem;
+  }
+}
